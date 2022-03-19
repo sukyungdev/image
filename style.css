@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box::after {
+  content: 'Hello world!';
+  font-size: 50px;
+  color: white;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: #ff5d85;
+  border-radius: 15px;
+}
+
+@media screen and (max-width:768px) {
+  .box {
+    background-color: #ffa2b9;
+  }
+}
